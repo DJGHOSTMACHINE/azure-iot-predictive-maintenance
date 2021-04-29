@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.Azure.Devices
+    versions:
+    - 1.29.0
+    - 1.30.0
+    - 1.31.0
+  - dependency-name: PInvoke.NCrypt
+    versions:
+    - 0.7.78
+  - dependency-name: PInvoke.Kernel32
+    versions:
+    - 0.7.78
